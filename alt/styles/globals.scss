@@ -33,3 +33,24 @@ $mobileText: 0.9rem;
 
 $normalFont: "IBMPlexMono";
 $boldFont: "Gilroy-ExtraBold";
+.alice-carousel__dots {
+  position: relative !important;
+  left: -460px;
+  top: -80px;
+  margin: 0 !important;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.alice-carousel__dots-item:not(.__custom):hover,
+.alice-carousel__dots-item:not(.__custom).__active {
+  background-color: white !important;
+  opacity: 1;
+}
+.alice-carousel__dots-item:not(.__custom) {
+  width: 21px !important;
+  height: 21px !important;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.5;
+}

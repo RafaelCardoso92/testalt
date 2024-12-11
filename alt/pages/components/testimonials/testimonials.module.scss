@@ -1,0 +1,23 @@
+@import "../../../styles/globals.scss";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -420px;
+  .title {
+    font-size: 30px;
+    color: #0a151b;
+    font-family: $boldFont;
+    line-height: 58px;
+  }
+  .link {
+    text-decoration: underline;
+    color: black;
+    font-size: 12px;
+    font-family: $normalFont;
+    line-height: 30px;
+    cursor: pointer;
+  }
+}

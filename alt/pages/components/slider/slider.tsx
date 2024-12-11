@@ -1,6 +1,8 @@
 import styles from "./slider.module.scss";
+import Image from "next/image";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import sliderImg from "../../../images/slider.png";
 interface Props {}
 
 export default function Slider(props: Props) {
@@ -9,41 +11,50 @@ export default function Slider(props: Props) {
     title2: "STARTS HERE.",
     sliderData: [
       {
-        date: "2003",
+        name: "Paul Johnson, Director",
+        place: "Nottingham Forest Football Club",
         text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+        img: sliderImg,
       },
       {
-        date: "2004",
+        name: "Paul Johnson, Director",
+        place: "Nottingham Forest Football Club",
         text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+        img: sliderImg,
       },
       {
-        date: "2007",
+        name: "Paul Johnson, Director",
+        place: "Nottingham Forest Football Club",
         text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+        img: sliderImg,
       },
       {
-        date: "2009-10",
+        name: "Paul Johnson, Director",
+        place: "Nottingham Forest Football Club",
         text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+        img: sliderImg,
       },
       {
-        date: "2012",
+        name: "Paul Johnson, Director",
+        place: "Nottingham Forest Football Club",
         text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
-      },
-      {
-        date: "2015",
-        text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.",
+        img: sliderImg,
       },
     ],
   };
   const responsive = {
     0: { items: 1 },
-    700: { items: 2 },
-    1024: { items: 3 },
-    1200: { items: 4 },
   };
   const items = slider.sliderData.map((sliderData, index) => (
     <div className={styles.data} key={index} data-value={index}>
-      <div className={styles.dataDate}>{sliderData.date}</div>
-      <div className={styles.dataText}>{sliderData.text}</div>
+      <div className={styles.dataImg}>
+        <Image src={sliderData.img} alt="test" />
+      </div>
+      <div className={styles.dataWrapper}>
+        <div className={styles.dataText}>{sliderData.text}</div>
+        <div className={styles.dataDate}>{sliderData.name}</div>
+        <div className={styles.dataDate}>{sliderData.place}</div>
+      </div>
     </div>
   ));
   const renderNextButton = () => {
@@ -55,14 +66,10 @@ export default function Slider(props: Props) {
   };
   return (
     <div className={styles.sliderContainer}>
-      <div className={styles.contentSliderTitle}>{slider.title1}</div>
-      <div className={styles.contentSliderTitle}>{slider.title2}</div>
-      <hr />
       <div className={styles.contentSlider}>
         <AliceCarousel
           mouseTracking
           items={items}
-          disableDotsControls
           responsive={responsive}
           controlsStrategy="responsive"
           keyboardNavigation={true}

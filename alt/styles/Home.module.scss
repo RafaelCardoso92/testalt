@@ -10,7 +10,7 @@
   background-color: #31297d;
   background-image: url(../images/mainBackground.svg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+
   background-position: top;
   width: 100%;
   background-size: 96rem auto;
@@ -32,6 +32,29 @@
     display: flex;
     justify-content: center;
     gap: 38px;
+  }
+  .clients {
+  }
+  .midSection {
+  }
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 133px;
+  }
+  .faq {
+    background-color: black;
+    background-image: url(../images/mainBackground.svg);
+    background-repeat: no-repeat;
+    background-position: 600px 700px;
+    width: 100%;
+    background-size: 60rem auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

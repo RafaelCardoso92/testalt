@@ -1,0 +1,78 @@
+@import "../../../styles/globals.scss";
+
+.contentSlider {
+  padding: 2rem 3rem;
+}
+
+.sliderContainer {
+  padding: 3rem;
+}
+
+.sliderContainer {
+  hr {
+    height: 0.3rem;
+    background-color: $mainColor;
+    border: 0;
+  }
+}
+
+.Rightbutton {
+  content: url(../../../images/arrow.svg);
+  cursor: pointer;
+  position: absolute;
+  top: 4rem;
+  right: -3rem;
+}
+.Leftbutton {
+  content: url(../../../images/arrow.svg);
+  transform: rotate(180deg);
+  cursor: pointer;
+  position: absolute;
+  top: 4rem;
+  left: -3rem;
+}
+.contentSliderTitle {
+  font-size: $bigTitle;
+  font-weight: 900;
+  color: $mainColor;
+  text-transform: uppercase;
+  font-family: $boldFont;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.dataDate {
+  padding: 0 1rem;
+  font-size: $smallTitle;
+  font-weight: 800;
+  color: $mainColor;
+  font-family: $boldFont;
+}
+.dataText {
+  padding: 1rem;
+  max-width: 18rem;
+  line-height: 1.5rem !important;
+  font-weight: 600;
+  color: $mainColor;
+  font-family: $normalFont;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sliderContainer {
+    padding: 2rem 1rem;
+  }
+  .contentSliderTitle {
+    font-size: $smallTitle;
+  }
+}
+@media (max-width: 350px) {
+  .contentSlider {
+    padding: 2rem 2rem;
+  }
+  .dataText {
+    padding: 0rem;
+  }
+}

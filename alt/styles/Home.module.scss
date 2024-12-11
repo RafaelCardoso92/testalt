@@ -1,0 +1,119 @@
+@import "./globals.scss";
+
+.container {
+  max-width: 1512px;
+  margin: auto;
+  width: 100%;
+}
+
+.background {
+  background-color: #31297d;
+  background-image: url(../images/mainBackground.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  width: 100%;
+  background-size: 96rem auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentContainer {
+  height: 100%;
+  background-color: $backgroundColor;
+  z-index: 10;
+  position: relative;
+  .blockContainer {
+    position: relative;
+    z-index: 5;
+    top: -100px;
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+  }
+}
+
+// .contentFloat {
+//   display: flex;
+//   justify-content: space-between;
+//   background-color: $white;
+//   padding: 3rem;
+//   margin: 0 3rem;
+//   top: -6rem;
+//   z-index: 12;
+//   position: relative;
+//   color: $mainColor;
+// }
+// .contentWrapper {
+//   width: 100%;
+//   height: 100%;
+// }
+// .contentFloatTitle {
+//   font-size: $midTitle;
+//   font-weight: 600;
+//   color: $mainColor;
+//   font-family: $boldFont;
+// }
+// .contentFloatText {
+//   padding: 0.8rem 0;
+//   line-height: 1.8rem;
+//   color: $mainColor;
+//   font-weight: 600;
+//   max-width: 30rem;
+//   font-size: $smallText;
+//   font-family: $normalFont;
+// }
+// .contentTop {
+//   text-align: center;
+//   color: $mainColor;
+//   padding: 0 8rem;
+//   font-size: $smallTitle;
+//   margin-bottom: 4rem;
+//   font-family: $boldFont;
+//   line-height: 2.5rem;
+// }
+// .contentWrap {
+//   padding: 0 2rem;
+//   display: flex;
+//   justify-content: space-evenly;
+// }
+
+// .verticalWrap {
+//   display: flex;
+//   min-height: 10rem;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   margin-bottom: 3rem;
+// }
+
+// /* Mobile */
+// @media (max-width: 768px) {
+//   .container {
+//   }
+//   .background {
+//     max-height: 15rem;
+//     background-size: auto 26rem;
+//     background-position: 10rem 0;
+//   }
+
+//   .contentFloat {
+//     flex-direction: column;
+//     padding: 1rem;
+//     top: -3rem;
+//     margin: 0 1rem;
+//   }
+//   .contentWrap {
+//     flex-direction: column;
+//     padding: 0 1rem;
+//     align-items: center;
+//   }
+//   .verticalWrap {
+//     justify-content: space-evenly;
+//   }
+// }
+
+// /* Tablet and Smaller Desktop */
+// @media (min-width: 769px) and (max-width: 1350px) {
+// }

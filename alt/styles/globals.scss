@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "IBMPlexMono";
+  src: local("IBMPlexMono"),
+    url(../fonts/IBMPlexMono-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: local("Gilroy-ExtraBold"),
+    url(../fonts/Gilroy-ExtraBold.otf) format("truetype");
+}
+
+$font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+  "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+  "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+$mainColor: #31297d;
+$secondaryColor: #f4207b;
+$sectionColor: #c92c93;
+$backgroundColor: #fff;
+$white: #fff;
+
+$bigTitle: 70px;
+$midTitle: 33px;
+$smallTitle: 30px;
+$xsmallTitle: 21px;
+$mobileTitle: 1.1rem;
+
+$bigText: 16px;
+$midText: 12px;
+$smallText: 1.1rem;
+$xsmallText: 1rem;
+$mobileText: 0.9rem;
+
+$normalFont: "IBMPlexMono";
+$boldFont: "Gilroy-ExtraBold";

@@ -1,0 +1,18 @@
+@import "../../../styles/globals.scss";
+
+.sectionContainer {
+  background-color: $white;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-column-gap: 2rem;
+  padding: 1rem;
+}
+.section {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .sectionContainer {
+    grid-template-columns: 1fr;
+  }
+}

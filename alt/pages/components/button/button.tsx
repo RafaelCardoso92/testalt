@@ -2,7 +2,7 @@ import styles from "./button.module.scss";
 
 interface Variants {
   variant: string;
-  text: string;
+  text?: string;
 }
 export default function Button(props: Variants) {
   return (

@@ -18,6 +18,9 @@
       flex-direction: column;
       padding: 0 100px;
       gap: 50px;
+      @media (max-width: 768px) {
+        padding: 0;
+      }
       .midContentImage {
         img {
           width: 100%;

@@ -1,0 +1,116 @@
+@import "../../../styles/globals.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+  margin-bottom: 28px;
+  .footerImage {
+    & img {
+      width: 100%;
+      object-fit: cover;
+      @media (max-width: 768px) {
+        max-width: 100%;
+        height: auto;
+        object-fit: none;
+      }
+    }
+  }
+  .footerForm {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .left {
+      .footerFormTitle {
+        font-size: 60px;
+        color: $white;
+        font-family: $boldFont;
+        margin-top: 25px;
+        max-width: 615px;
+      }
+      .footerFormTxt {
+        color: $white;
+        max-width: 540px;
+        font-family: $normalFont;
+        line-height: 30px;
+        font-size: 16px;
+      }
+      .footerFormEnd {
+        color: $white;
+        max-width: 540px;
+        font-family: $normalFont;
+        line-height: 30px;
+        font-size: 16px;
+      }
+    }
+    .right {
+      color: $white;
+      max-width: 540px;
+      font-family: $normalFont;
+      line-height: 30px;
+      font-size: 16px;
+      & * {
+        color: white;
+        border-color: white;
+      }
+      & input {
+        width: 488px;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .footerLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    color: $white;
+    font-family: $normalFont;
+    line-height: 22px;
+    font-size: 12px;
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .info {
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #cacaca;
+  }
+  .footerEnd {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .footerEndTxt {
+      color: $white;
+      font-family: $normalFont;
+      line-height: 26px;
+      font-size: 11px;
+      padding: 0 27px;
+    }
+  }
+}

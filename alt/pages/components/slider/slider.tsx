@@ -7,8 +7,6 @@ interface Props {}
 
 export default function Slider(props: Props) {
   const slider = {
-    title1: "OUR NEW ERA",
-    title2: "STARTS HERE.",
     sliderData: [
       {
         name: "Paul Johnson, Director",

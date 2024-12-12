@@ -11,15 +11,21 @@
     padding-left: 40px;
     display: flex;
     gap: 33px;
+
     .logo {
+      display: flex;
+      align-items: center;
     }
+
     .wrapper {
       display: flex;
       flex-direction: column;
       gap: 35px;
+
       .info {
         display: flex;
         gap: 35px;
+
         & a {
           text-decoration: none;
           color: white;
@@ -27,25 +33,47 @@
           font-family: $normalFont;
         }
       }
+
       .menu {
-        display: flex;
+        display: none;
         gap: 35px;
         font-size: 18px;
         font-family: $boldFont;
         text-wrap: nowrap;
+
         & a {
           text-decoration: none;
           color: white;
         }
+
+        @media (min-width: 768px) {
+          display: flex;
+        }
+      }
+    }
+
+    .burgerMenu {
+      display: flex;
+      align-items: center;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+
+      & .MuiSvgIcon-root {
+        font-size: 28px;
+        color: white;
       }
     }
   }
+
   .requestSupport {
     display: flex;
     padding-right: 40px;
     flex-direction: column;
     text-wrap: nowrap;
     gap: 35px;
+
     .support {
       & a {
         text-decoration: none;
@@ -54,7 +82,32 @@
         font-family: $normalFont;
       }
     }
+
     .button {
+    }
+  }
+
+  .drawerContent {
+    width: 250px;
+    padding: 20px;
+    background-color: #333;
+    height: 100%;
+
+    & .MuiIconButton-root {
+      color: white;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    & .MuiListItemText-primary {
+      color: white;
+      font-family: $normalFont;
+    }
+
+    & a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
     }
   }
 }

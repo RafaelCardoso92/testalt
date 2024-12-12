@@ -8,10 +8,6 @@ import client5 from "../../../images/client5.svg";
 import client6 from "../../../images/client6.svg";
 interface Props {}
 export default function Clients(props: Props) {
-  const partners = {
-    title1: "dealer groups",
-    title2: "manufacturers",
-  };
   return (
     <div className={styles.partnersContainer}>
       <div className={styles.title}>Our Clients Include</div>

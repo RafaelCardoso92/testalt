@@ -1,21 +1,62 @@
 @import "../../../styles/globals.scss";
-.partnersContainer {
-  padding: 3rem 0;
+.container {
+  margin-top: 111px;
   background-color: $white;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 27px;
-  margin-bottom: 70px;
+  margin-bottom: 128px;
 }
 .title {
+  margin-bottom: 60px;
+  max-width: 610px;
+  text-align: center;
   display: flex;
-  font-size: 13px;
-  font-family: $normalFont;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: $boldFont;
   align-items: center;
+  color: #0a151b;
 }
-.clients {
-  display: flex;
-  gap: 88px;
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 55px 100px;
   align-items: center;
+  .teamBlock {
+    max-width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .imageGroup {
+      margin-bottom: -50px;
+      .imagePosition {
+        position: relative;
+        z-index: 5;
+        top: -90px;
+        left: 50px;
+      }
+    }
+    .teamTitle {
+      margin: 0;
+      color: #0a151b;
+      display: flex;
+      font-size: 20px;
+      font-family: $boldFont;
+      align-items: center;
+      line-height: 45px;
+    }
+    .text {
+      text-align: center;
+      margin: 0;
+      color: #0a151b;
+      display: flex;
+      font-size: 12px;
+      font-family: $normalFont;
+      align-items: center;
+      line-height: 26px;
+    }
+  }
 }

@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 475px;
-
+  padding-bottom: 161px;
   justify-content: center;
   .business {
     display: flex;
@@ -64,8 +64,10 @@
         .left {
           max-width: 290px;
           & img {
-            max-width: 289px;
-            height: auto;
+            border-radius: 10px;
+            width: 289px;
+            height: 194px;
+            object-fit: cover;
           }
           .date {
             color: white;
@@ -84,8 +86,10 @@
         .right {
           max-width: 290px;
           & img {
-            max-width: 289px;
-            height: auto;
+            border-radius: 10px;
+            width: 289px;
+            height: 194px;
+            object-fit: cover;
           }
           .date {
             color: white;

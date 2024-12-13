@@ -100,11 +100,11 @@ export default function Faq(props: Props) {
           <div>
             <h2 className={styles.title}>FAQ</h2>
             {FAQ.faqData.map((faq, index) => (
-              <div key={index}>
+              <div className={styles.accordion} key={index}>
                 <hr className={styles.hr} />
                 <Accordion
                   sx={{
-                    width: { xs: "100%", sm: "600px" },
+                    width: { xs: "100%", md: "600px" },
                     backgroundColor: "transparent",
                     color: "white",
                   }}

@@ -7,6 +7,11 @@
   align-items: center;
   gap: 27px;
   margin-bottom: 128px;
+  width: 100%;
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 .title {
   margin-bottom: 60px;
@@ -18,6 +23,12 @@
   font-family: $boldFont;
   align-items: center;
   color: #0a151b;
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 38px;
+    width: 90%;
+    margin-bottom: 30px;
+  }
 }
 .row {
   display: grid;
@@ -27,6 +38,7 @@
   @media (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
     gap: 30px 10px;
+    width: 90%;
   }
   .teamBlock {
     max-width: 275px;

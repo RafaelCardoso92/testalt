@@ -18,14 +18,15 @@
   }
   .footerForm {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     gap: 100px;
     @media (max-width: 768px) {
-      width: 100%;
+      width: 90%;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      gap: 30px;
     }
     .left {
       .footerFormTitle {
@@ -34,6 +35,9 @@
         font-family: $boldFont;
         margin-top: 25px;
         max-width: 615px;
+        @media (max-width: 768px) {
+          font-size: 40px;
+        }
       }
       .footerFormTxt {
         color: $white;
@@ -51,6 +55,7 @@
       }
     }
     .right {
+      width: 100%;
       color: $white;
       max-width: 540px;
       font-family: $normalFont;
@@ -70,24 +75,30 @@
   }
   .footerLinks {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
-    width: 100%;
+    width: 90%;
     color: $white;
     font-family: $normalFont;
     line-height: 22px;
     font-size: 12px;
     @media (max-width: 768px) {
-      width: 100%;
+      width: 90%;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      align-items: flex-start;
+      gap: 20px;
     }
     .info {
+      & p {
+        line-height: 22px;
+        margin: 0;
+      }
     }
     .links {
       display: flex;
       flex-direction: column;
+      line-height: 22px;
     }
   }
   .hr {
@@ -111,6 +122,9 @@
       line-height: 26px;
       font-size: 11px;
       padding: 0 27px;
+      @media (max-width: 768px) {
+        margin: 0;
+      }
     }
   }
 }

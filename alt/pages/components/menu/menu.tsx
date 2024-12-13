@@ -29,7 +29,6 @@ export default function Menu(props: Props) {
           <Image src={logo} alt="logo" />
         </div>
         <div className={styles.wrapper}>
-          {/* Burger Menu Button for Mobile */}
           <IconButton
             className={styles.burgerMenu}
             onClick={toggleDrawer(true)}
@@ -38,8 +37,7 @@ export default function Menu(props: Props) {
             <MenuIcon />
           </IconButton>
 
-          {/* Main Menu for Desktop */}
-          <div className={styles.menu} style={{ display: "none", md: "flex" }}>
+          <div className={styles.menu}>
             <a href="#services">Services</a>
             <a href="#case-studies">Case Studies</a>
             <a href="#insights">Insights</a>
@@ -63,16 +61,36 @@ export default function Menu(props: Props) {
             <CloseIcon />
           </IconButton>
           <List>
-            <ListItem button component="a" href="#services">
+            <ListItem
+              sx={{ color: "black" }}
+              button
+              component="a"
+              href="#services"
+            >
               <ListItemText primary="Services" />
             </ListItem>
-            <ListItem button component="a" href="#case-studies">
+            <ListItem
+              sx={{ color: "black" }}
+              button
+              component="a"
+              href="#case-studies"
+            >
               <ListItemText primary="Case Studies" />
             </ListItem>
-            <ListItem button component="a" href="#insights">
+            <ListItem
+              sx={{ color: "black" }}
+              button
+              component="a"
+              href="#insights"
+            >
               <ListItemText primary="Insights" />
             </ListItem>
-            <ListItem button component="a" href="#contact">
+            <ListItem
+              sx={{ color: "black" }}
+              button
+              component="a"
+              href="#contact"
+            >
               <ListItemText primary="Contact" />
             </ListItem>
           </List>

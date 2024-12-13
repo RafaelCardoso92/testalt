@@ -8,10 +8,14 @@
   justify-content: space-between;
 
   .nav {
-    padding-left: 40px;
+    padding: 0 40px;
     display: flex;
     gap: 33px;
-
+    @media (max-width: 768px) {
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 20px;
+    }
     .logo {
       display: flex;
       align-items: center;
@@ -35,19 +39,18 @@
       }
 
       .menu {
-        display: none;
         gap: 35px;
         font-size: 18px;
         font-family: $boldFont;
         text-wrap: nowrap;
-
+        display: flex;
         & a {
           text-decoration: none;
           color: white;
         }
 
-        @media (min-width: 768px) {
-          display: flex;
+        @media (max-width: 768px) {
+          display: none;
         }
       }
     }
@@ -59,10 +62,19 @@
       @media (min-width: 768px) {
         display: none;
       }
-
+      & svg {
+        fill: white;
+        stroke: white;
+        font-size: 50px;
+      }
       & .MuiSvgIcon-root {
         font-size: 28px;
         color: white;
+      }
+      & .MuiTypography-body1 {
+        font-size: 18px;
+        font-family: $boldFont;
+        color: black;
       }
     }
   }
@@ -73,7 +85,9 @@
     flex-direction: column;
     text-wrap: nowrap;
     gap: 35px;
-
+    @media (max-width: 865px) {
+      display: none;
+    }
     .support {
       & a {
         text-decoration: none;

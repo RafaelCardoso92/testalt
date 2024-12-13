@@ -5,7 +5,10 @@
   display: flex;
   height: 600px;
   justify-content: space-between;
-
+  @media (max-width: 768px) {
+    justify-content: center;
+    width: 90%;
+  }
   .heroText {
     padding-left: 141px;
     top: 85px;
@@ -16,8 +19,11 @@
     .heroH1 {
       max-width: 470px;
       color: white;
-      font-size: 70px;
+      font-size: clamp(40px, 4.5vw, 70px);
       font-family: $boldFont;
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
     }
     .heroP {
       max-width: 567px;
@@ -35,7 +41,7 @@
     overflow: hidden;
     position: relative;
     top: 10px;
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       display: none;
     }
     .img14 {

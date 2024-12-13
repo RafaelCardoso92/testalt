@@ -5,12 +5,23 @@
   width: 100%;
   display: flex;
   max-height: 651px;
+
   .contentLeft {
     width: 50%;
+    @media (max-width: 1355px) {
+      display: none;
+      width: 0;
+    }
   }
   .contentRight {
     width: 50%;
     display: flex;
+
+    @media (max-width: 1355px) {
+      width: 100%;
+      justify-content: center;
+      padding: 20px 0;
+    }
 
     .midContent {
       justify-content: center;
@@ -18,8 +29,9 @@
       flex-direction: column;
       padding: 0 100px;
       gap: 50px;
+
       @media (max-width: 768px) {
-        padding: 0;
+        width: 90%;
       }
       .midContentImage {
         img {
@@ -32,6 +44,11 @@
         color: $white;
         font-family: $boldFont;
         line-height: 58px;
+
+        @media (max-width: 768px) {
+          font-size: 30px;
+          line-height: 40px;
+        }
       }
       .midContentText {
         color: $white;
@@ -40,49 +57,5 @@
         line-height: 30px;
       }
     }
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .contentLeft {
-    width: 100%;
-  }
-  .contentRight {
-    width: 100%;
-    display: unset;
-  }
-
-  .midContainer {
-    background-size: 39rem 37rem;
-    flex-direction: column;
-  }
-  .midContent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 0 1rem 0 2rem;
-  }
-  .midContentImage {
-    padding: 0rem 1rem;
-  }
-  .midContentImage {
-    img {
-      width: 60%;
-      height: auto;
-    }
-  }
-  .midContentTitle {
-    font-size: $midTitle;
-  }
-  .midContentText {
-    color: $white;
-    max-width: 20rem;
-    padding-bottom: 1rem;
-  }
-}
-@media (max-width: 350px) {
-  .midContainer {
-    background-size: 47rem 37rem;
   }
 }

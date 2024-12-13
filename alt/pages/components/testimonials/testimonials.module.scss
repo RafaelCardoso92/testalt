@@ -6,11 +6,19 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: -420px;
+  @media (max-width: 768px) {
+    padding: 30px 0;
+    width: 90%;
+  }
   .title {
     font-size: 30px;
     color: #0a151b;
     font-family: $boldFont;
     line-height: 58px;
+    @media (max-width: 768px) {
+      line-height: 40px;
+      margin: 0;
+    }
   }
   .link {
     text-decoration: underline;
@@ -19,5 +27,8 @@
     font-family: $normalFont;
     line-height: 30px;
     cursor: pointer;
+    @media (max-width: 768px) {
+      line-height: 20px;
+    }
   }
 }

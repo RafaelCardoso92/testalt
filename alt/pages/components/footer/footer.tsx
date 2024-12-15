@@ -70,7 +70,8 @@ function Footer(): JSX.Element {
       <div className={styles.footerForm}>
         <div className={styles.left}>
           <p className={styles.footerFormTitle}>
-            We’re your IT Services problem solvers
+            We’re <span className={styles.outlinedText}>your</span> IT Services
+            problem solvers
           </p>
           <p className={styles.footerFormTxt}>
             Recognising your frustrations with your print environment, IT

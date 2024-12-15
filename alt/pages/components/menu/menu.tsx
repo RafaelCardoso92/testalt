@@ -36,7 +36,11 @@ export default function Menu(props: Props) {
           >
             <MenuIcon />
           </IconButton>
-
+          <div className={styles.info}>
+            <a href="#services">0845 034 0895</a>
+            <a href="#case-studies">About us</a>
+            <a href="#insights">Careers</a>
+          </div>
           <div className={styles.menu}>
             <a href="#services">Services</a>
             <a href="#case-studies">Case Studies</a>

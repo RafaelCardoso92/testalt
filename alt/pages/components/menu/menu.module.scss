@@ -24,7 +24,7 @@
     .wrapper {
       display: flex;
       flex-direction: column;
-      gap: 35px;
+      gap: 45px;
 
       .info {
         display: flex;
@@ -36,10 +36,13 @@
           font-size: 16px;
           font-family: $normalFont;
         }
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       .menu {
-        gap: 35px;
+        gap: 54px;
         font-size: 18px;
         font-family: $boldFont;
         text-wrap: nowrap;
@@ -85,7 +88,8 @@
     flex-direction: column;
     text-wrap: nowrap;
     gap: 35px;
-    @media (max-width: 865px) {
+    align-items: flex-end;
+    @media (max-width: 900px) {
       display: none;
     }
     .support {

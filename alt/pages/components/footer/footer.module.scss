@@ -9,10 +9,11 @@
     & img {
       width: 100%;
       object-fit: cover;
+      background-color: white;
       @media (max-width: 768px) {
         max-width: 100%;
         height: auto;
-        object-fit: none;
+        object-fit: fill;
       }
     }
   }
@@ -22,11 +23,14 @@
     justify-content: center;
     width: 100%;
     gap: 100px;
+
+    margin-bottom: 120px;
     @media (max-width: 768px) {
       width: 90%;
       flex-direction: column;
       align-items: center;
       gap: 30px;
+      margin-bottom: 20px;
     }
     .left {
       .footerFormTitle {
@@ -37,6 +41,11 @@
         max-width: 615px;
         @media (max-width: 768px) {
           font-size: 40px;
+        }
+        .outlinedText {
+          color: transparent;
+          -webkit-text-stroke: 1px white; /* Outlines the text */
+          text-stroke: 1px white; /* Fallback for non-webkit browsers */
         }
       }
       .footerFormTxt {
@@ -55,18 +64,27 @@
       }
     }
     .right {
+      margin-top: 40px;
       width: 100%;
       color: $white;
       max-width: 540px;
       font-family: $normalFont;
       line-height: 30px;
       font-size: 16px;
+      @media (max-width: 768px) {
+        margin: 0;
+      }
+      & div {
+        padding: 0;
+      }
       & * {
         color: white;
         border-color: white;
       }
-      & input {
+      & input,
+      textarea {
         width: 488px;
+        padding: 16px;
         @media (max-width: 768px) {
           width: 100%;
         }
@@ -76,17 +94,19 @@
   .footerLinks {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    align-items: center;
-    width: 90%;
+    gap: 60px;
+    align-items: flex-start;
+
     color: $white;
     font-family: $normalFont;
     line-height: 22px;
     font-size: 12px;
+    justify-content: center;
+
     @media (max-width: 768px) {
       width: 90%;
       flex-direction: column;
-      align-items: flex-start;
+      justify-content: unset;
       gap: 20px;
     }
     .info {

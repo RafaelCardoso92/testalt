@@ -35,17 +35,26 @@ $normalFont: "IBMPlexMono";
 $boldFont: "Gilroy-ExtraBold";
 .alice-carousel__dots {
   position: relative !important;
-  left: -460px;
+  padding-left: 70px !important;
   top: -80px;
   margin: 0 !important;
-  padding: 0;
   list-style: none;
-  text-align: center;
+  text-align: left !important;
+  @media (max-width: 768px) {
+    left: unset;
+    top: -60px;
+    padding-left: 0px !important;
+    text-align: center !important;
+  }
 }
+
 .alice-carousel__dots-item:not(.__custom):hover,
 .alice-carousel__dots-item:not(.__custom).__active {
   background-color: white !important;
   opacity: 1;
+}
+.alice-carousel__dots-item:not(.__custom):not(:last-child) {
+  margin-right: 9px !important;
 }
 .alice-carousel__dots-item:not(.__custom) {
   width: 21px !important;

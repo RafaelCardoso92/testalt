@@ -48,7 +48,8 @@
     }
 
     .logo {
-      fill: white; // Change SVG color on hover
+      filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(250deg)
+        brightness(2.5) contrast(1);
     }
   }
 }

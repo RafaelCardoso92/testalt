@@ -1,6 +1,8 @@
 import styles from "./faq.module.scss";
 import Image from "next/image";
 import Insight1 from "../../../images/insight1.png";
+import Insight2 from "../../../images/insight2.png";
+import Insight3 from "../../../images/insight3.png";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -58,12 +60,16 @@ export default function Faq(props: Props) {
           <p className={styles.left}>
             Recognising your frustrations with your print environment, IT
             services, document management & communications and finding a
-            solution to overcome them.
+            solution to overcome them.  Recognising your frustrations with your
+            print environment, IT services, document management & communications
+            and finding a solution to overcome them. 
           </p>
           <p className={styles.right}>
             Recognising your frustrations with your print environment, IT
             services, document management & communications and finding a
-            solution to overcome them.
+            solution to overcome them.  Recognising your frustrations with your
+            print environment, IT services, document management & communications
+            and finding a solution to overcome them. 
           </p>
         </div>
       </div>
@@ -80,7 +86,7 @@ export default function Faq(props: Props) {
           </div>
           <div className={styles.divider}>
             <div className={styles.left}>
-              <Image src={Insight1} alt="" />
+              <Image src={Insight2} alt="" />
               <p className={styles.date}>15/06/2024</p>
               <p className={styles.summary}>
                 Boost productivity within your law firm with xerox technology

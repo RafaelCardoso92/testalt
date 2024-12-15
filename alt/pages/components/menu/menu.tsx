@@ -65,36 +65,20 @@ export default function Menu(props: Props) {
             <CloseIcon />
           </IconButton>
           <List>
-            <ListItem
-              sx={{ color: "black" }}
-              button
-              component="a"
-              href="#services"
-            >
+            <ListItem sx={{ color: "black" }} component="a" href="#services">
               <ListItemText primary="Services" />
             </ListItem>
             <ListItem
               sx={{ color: "black" }}
-              button
               component="a"
               href="#case-studies"
             >
               <ListItemText primary="Case Studies" />
             </ListItem>
-            <ListItem
-              sx={{ color: "black" }}
-              button
-              component="a"
-              href="#insights"
-            >
+            <ListItem sx={{ color: "black" }} component="a" href="#insights">
               <ListItemText primary="Insights" />
             </ListItem>
-            <ListItem
-              sx={{ color: "black" }}
-              button
-              component="a"
-              href="#contact"
-            >
+            <ListItem sx={{ color: "black" }} component="a" href="#contact">
               <ListItemText primary="Contact" />
             </ListItem>
           </List>

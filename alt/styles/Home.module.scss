@@ -58,11 +58,11 @@
   }
   .faq {
     background-color: black;
-    background-image: url(../images/mainBackground.svg);
+    background-image: url(../images/midBackground.png);
     background-repeat: no-repeat;
-    background-position: 600px 700px;
+    background-position: 390px 420px;
     width: 100%;
-    background-size: 60rem auto;
+    background-size: 70rem auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -72,9 +72,9 @@
   }
   .footer {
     background-color: #ff3a7a;
-    background-image: url(../images/mainBackground.svg);
+    background-image: url(../images/footerbackground.png);
     background-repeat: no-repeat;
-    background-position: 600px 700px;
+    background-position: -40px 800px;
     width: 100%;
     background-size: 60rem auto;
     height: auto;
